@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Ahmed Skula</title>
+	<link rel="icon" type="image/gif" href="icon.gif">
+
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+<!-- [data-animate-header-container] - header container for calculating when the header is in or out of view
+     [data-animate-header] - actual element that will be animated -->
+
+	<header class='header' data-animate-header-container>
+		<menu class="header-bar" data-animate-header>
+			<a href="#home">Home</a>
+			<a href="#bio">Bio</a>
+			<a href="#cv">CV</a>
+			<a href="#contact">Contact</a>
+			<a href="https://askula3.github.io/WebAppDev-HW2/" target="_blank">GitHub</a>
+			<a href=""></a><a href=""><a href=""></a><a href=""><a href=""></a><a href="">
+			<a href=""></a><a href=""><a href=""></a><a href=""><a href=""></a><a href="">
+			<a href='#menu'>Login</a>
+		</menu>
+	</header>
+
+	<div id="home" class="backgimg1">
+		<section id="arrow" class="scroll">
+			<a href="#bio"><span></span>Scroll</a>
+			<div class="bg-text">Welcome to Ahmed Skula's personal web page :D</div>
+		</section>
+	</div>
+
+	<div id="bio" class="backgimg2">
+		<section class='trigger-section' data-animate-header-target>
+			<div class="bio">
+				<h1 style="margin: 0; position: relative; top: -80px; left: -20px">Ahmed Skula</h1>
+				<p>Ahmed is guy from Tesanj. Currently, he is student of Computer Science and Engineering on International
+			University of Sarajevo.
+				</p>
+				<img src="as-sign.gif" style="position: relative; top: 50px; max-height: 120px">
+				<div style="position: relative; top: 60px">
+					<a href="https://instagram.com/ahmed_skula/" target="_blank" class="fa fa-instagram"></a>
+					<a href="https://snapchat.com/add/skula97/" target="_blank" class="fa fa-snapchat-ghost"></a>
+					<a href="https://pinterest.com/askula3/" target="_blank" class="fa fa-pinterest"></a>
+					<a href="https://github.com/askula3/"target="_blank" class="fa fa-github"></a>
+				</div>
+			</div>
+			<img src="as-img.png" style="position: relative; left: -40%; top: -290px; height: 640px">
+		</section>
+	</div>
+
+	<div id="cv" style="position:relative; color: #1b1b1b; background-color: white">
+		<h1 style= "color: #1b1b1b;">Curriculum Vitae</h1>
+		<div class="row" style="margin-left: 50px">
+			<div class="column">
+				<h4>Education:</h4>
+				<ul>
+					<li>High school:<br> Behram-begova medresa, Tuzla<br>Graduated: 2017.</li>
+					<li>University:<br> International University of Sarajevo, Sarajevo<br>Faculty of Engineering and Natural Sciences,<br>
+						Department of Computer Science and Engineering<br>From 2017.-present</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h4>Skills:</h4>
+				<ul>
+					<li>Programming: C, C++, Qt</li>
+					<li>Adobe: Photoshop, Lightroom, InDesign</li>
+					<li>Microsoft: Word, PowerPoint</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h4>Languages:</h4>
+				<ul>
+					<li>Bosnian: native</li>
+					<li>English: reading, writing, speaking - B2 level</li>
+					<li>Arabic: reading, writing, speaking - B2+ level</li>
+				</ul>
+			</div>
+		</div>
+		<div class="backgimg2" style="min-height: 340px"></div>
+	</div>
+
+	<div class="backgimg2">
+
+
+		<div id="contact" style="position:relative; left: 30px; max-width: 600px">
+			<h1 style="padding-top: 30px; padding-left: 0">Contact Me</h1>
+			<div class="contact">
+				<form action="someAction">
+					<label for="name">First Name</label>
+					<input type="text" id="name" name="firstname" placeholder="Example: Ahmed">
+
+					<label for="surname">Last Name</label>
+					<input type="text" id="surname" name="lastname" placeholder="Example: Skula">
+
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write Your message here..." style="height: 150px"></textarea>
+
+					<input type="submit" value="SUBMIT">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<p>askula3 © Ahmed Skula. All rights reserved.</p>
+	</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js'></script>
+
+<script src="index.js"></script>
+</body>
+</html>
